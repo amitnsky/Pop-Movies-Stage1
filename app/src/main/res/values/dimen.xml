@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding_top_header">10dp</dimen>
+    <dimen name="default_margin_header">10dp</dimen>
+
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_content_padding">8dp</dimen>
+
+
+    <dimen name="header_title_text">32sp</dimen>
+    <dimen name="header_year_text">28sp</dimen>
+    <dimen name="header_runtime_text">18sp</dimen>
+</resources>

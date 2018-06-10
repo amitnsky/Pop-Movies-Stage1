@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="sort_key_toprated">top_rated</string>
+    <string name="sort_key_popular">popular</string>
+    <string name="thumbnail_des">Movie Poster</string>
+    <string name="loader_error">No such loader exists.</string>
+    <string name="sort_pref_main_name">pop_movie_shared_pref</string>
+    <string name="default_sort_by_value">@string/sort_by_popular_value</string>
+    <string name="sort">Sort Posters</string>
+    <string name="sort_msg">Choose sort order for Movies</string>
+
+    <string name="key_sort_by_posters">key_sort_by_posters</string>
+
+    <string name="sort_by_popular_label">Popular</string>
+    <string name="sort_by_rating_label">Rating</string>
+
+    <string name="sort_by_popular_value">popular</string>
+    <string name="sort_by_rating_value">top_rated</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+
+    <string name="saved_msg">Changes saved successfully.</string>
+    <string name="canceled_msg">No changes saved.</string>
+
+    <string name="detail_error_message">Movie id not fount!!</string>
+    <string name="overview">Story line</string>
+    <string name="movie_release_year">release year</string>
+    <string name="movie_runtime">movie duration</string>
+    <string name="movie_rating">movie rating</string>
+    <string name="movie_detail_activity">Movie Details</string>
+    <string name="movie_info">Info</string>
+    <string name="title">Title : </string>
+    <string name="tagline">Subtitle : </string>
+    <string name="original_title">Original title : </string>
+
+</resources>

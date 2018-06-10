@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.amitnsky.popularmovies.utilities.JsonUtils" />
+        <variable
+            name="movie"
+            type="com.example.amitnsky.popularmovies.model.Movie" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/info_tv"
+                style="@style/headings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_info" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/info_tv"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/info_release_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin"
+                android:text="@{movie.release_date}" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info_genres_tv"
+            style="@style/headings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@{movie.genres!=null?JsonUtils.getFormattedGenres(movie.genres):null}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin">
+
+            <TextView
+                style="@style/headings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/title" />
+
+            <TextView
+                android:id="@+id/info_title_tv"
+                style="@style/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/default_margin"
+                android:gravity="start"
+                android:textAllCaps="true"
+                android:text="@{movie.title}" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin">
+
+            <TextView
+                style="@style/headings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/tagline" />
+
+            <TextView
+                android:id="@+id/info_tagline_tv"
+                style="@style/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/default_margin"
+                android:gravity="start"
+                android:text="@{movie.tagline}" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin">
+
+            <TextView
+                style="@style/headings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/original_title" />
+
+            <TextView
+                android:id="@+id/info_original_title_tv"
+                style="@style/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/default_margin"
+                android:gravity="start"
+                android:text="@{movie.original_title}" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>
