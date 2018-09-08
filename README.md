@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Pop-Movies-Stage1
 
 Project P1, I completed under Google-Udacity Scholarship Nanodegree program 2018, course code was nd801.
@@ -12,8 +11,7 @@ Follow steps for initial project setup if you have your key
 API_KEY="your api key here"
 
 replace "paste api key here" with your API KEY. done.
-||||||| merged common ancestors
-=======
+
 # Pop-Movies
 Project P1, I completed under Google-Udacity Scholarship Nanodegree program 2018, course code was nd801.
->>>>>>> finish project stage1 complete, submission was accepted
+finished project stage1 complete, submission was accepted
